@@ -10,13 +10,16 @@
 body {
   background-color: #fff9ea;
 }
+section {
+  padding: 28px 8%;
+}
 
 .btn_default {
   align-items: center;
   justify-content: center;
   border: none;
   display: flex;
-  background-color: #ffcb45;
+  background-color: #68e817;
   border-radius: 12px;
   padding: 10px 14px;
   font-weight: 600;
@@ -26,5 +29,41 @@ body {
 }
 
 .btn_default:hover {
-  background-color: #f8d477;
+  background-color: #3ce640;
+}
+
+.social_media_buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.social_media_buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1d1d1d;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.social_media_buttons a:hover {
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+#banner {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 70%;
+}
+
+#banner img {
+  height: 100%;
+  width: 90%;
 }
