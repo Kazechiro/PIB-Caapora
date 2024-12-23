@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ot-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/header.css" />
+    <link rel="stylesheet" href="/src/styles/home.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <!-- Menu navbar -->
+      <nav id="navbar">
+        <i class="fa-solid fa-book-bible" id="nav_logo"> PIB Caapora</i>
+        <ul id="nav_list">
+          <li class="nav_item active">
+            <a href="#home" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item active">
+            <a href="#paravoce" class="nav_link"
+              >Para você <i class="fa-solid fa-sort-down"></i
+            ></a>
+            <ul class="dropdown">
+              <li><a href="events.html">Eventos</a></li>
+              <li><a href="">Pedidos de oração</a></li>
+              <li><a href="">Programação</a></li>
+              <li><a href="">Doações</a></li>
+              <li><a href="">Em que Cremos</a></li>
+            </ul>
+          </li>
+          <li class="nav_item">
+            <a href="#menu" class="nav_link"
+              >Igreja <i class="fa-solid fa-sort-down"></i
+            ></a>
+            <ul class="dropdown">
+              <li><a href="">Galeria</a></li>
+              <li><a href="">babads</a></li>
+              <li><a href="">Nossa História</a></li>
+            </ul>
+          </li>
+          <li class="nav_item">
+            <a href="#testimonials" class="nav_link">Bíblia</a>
+          </li>
+        </ul>
+
+        <button class="btn_default">Fale conosco</button>
+
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item active">
+            <a href="#paravoce" class="nav_link">Para você</a>
+            <i class="fa-solid fa-sort-down"></i>
+            <ul class="dropdown">
+              <li><a href="">Eventos</a></li>
+              <li><a href="">Pedidos de oração</a></li>
+              <li><a href="">Programação</a></li>
+              <li><a href="">Doações</a></li>
+              <li><a href="">Em que Cremos</a></li>
+            </ul>
+          </li>
+          <li class="nav_item">
+            <a href="#menu" class="nav_link">Igreja</a>
+            <i class="fa-solid fa-sort-down"></i>
+            <ul class="dropdown">
+              <li><a href="">Galeria</a></li>
+              <li><a href="">Ministerios</a></li>
+              <li><a href="">Nossa História</a></li>
+            </ul>
+          </li>
+          <li class="nav_item">
+            <a href="#testimonials" class="nav_link">Bíblia</a>
+          </li>
+        </ul>
+
+        <button class="btn_default">Fale conosco</button>
+      </div>
+    </header>
+    <div id="banner">
+      <div id="banner_card"></div>
+
+      <h1 class="banner_title">PIB CAAPORA</h1>
+      <p class="banner_description">Crescendo em fé, vivendo em amor.</p>
+    </div>
+    <main id="content">
+      <section id="home">
+        <div id="cta">
+          <div id="cta_buttons">
+            <a href="#" class="btn_default">Fale conosco</a>
+
+            <a href="tel:+555555555" id="phone_button">
+              <button class="btn_default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (83) 98764-1234
+            </a>
+          </div>
+          <div class="social_media_buttons">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/pibcaapora_/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </section>
+      <section id="carrosel"></section>
+      <section id="menu">
+        <h2 class="section_title">O que significa ser um discípulo</h2>
+        <span class="text"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quae
+          dignissimos quod dolorum sed deleniti sapiente, vitae consequuntur,
+          amet accusamus voluptatem animi. Exercitationem omnis alias voluptate
+          eveniet repudiandae libero assumenda.
+        </span>
+        <h2 class="section_title">Como se tornar um discípulo de Jesus?</h2>
+        <span class="text"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quae
+          dignissimos quod dolorum sed deleniti sapiente, vitae consequuntur,
+          amet accusamus voluptatem animi. Exercitationem omnis alias voluptate
+          eveniet repudiandae libero assumenda.
+        </span>
+      </section>
+    </main>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
